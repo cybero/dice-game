@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="style.css">
+
+  <title>Dice Game by Cybero</title>
+</head>
+
+<body>
+
+  <div class="wrapper clearfix" id="main" style="visibility:visible">
+    <div class="player-0-panel active">
+      <div class="player-name" id="name-0">Player 1</div>
+      <div class="player-score" id="score-0">43</div>
+      <div class="player-current-box">
+        <div class="player-current-label">Current</div>
+        <div class="player-current-score" id="current-0">11</div>
+      </div>
+    </div>
+
+    <div class="player-1-panel">
+      <div class="player-name" id="name-1">Player 2</div>
+      <div class="player-score" id="score-1">11</div>
+      <div class="player-current-box">
+        <div class="player-current-label">Current</div>
+        <div class="player-current-score" id="current-1">0</div>
+      </div>
+    </div>
+
+    <button class="btn-new"><ion-icon name="rocket-outline"></ion-icon>New game</button>
+    <button class="btn-roll"><ion-icon name="sync-outline"></ion-icon>Roll dice</button>
+    <button class="btn-hold"><ion-icon name="download-outline"></ion-icon>Hold</button>
+    <button class="btn-instructions" id="popup"><ion-icon name="information-circle-outline"></ion-icon>Instructions</button>
+
+    <img src="dice-5.png" alt="Dice" class="dice">
+  </div>
+
+
+  <div class="wrapper clearfix" id="instructions" style="visibility: hidden">
+    <div class="instruction-panel body">
+      <p><b>GAME OBJECTIVE</b></p>
+      <br>
+      <p class="bullet-point">The first player to get a total score of 100 points wins!</p>
+      <br>
+      <br>
+      <br>
+      <button class="btn-close-instructions" id="closepopup"><i class="ion-ios-close-circle-outline"></i>Exit</button>
+
+      <div class="instruction-panel-left">
+        <p><i class="bullet-point">-> </i> Click <b>'ROLL DICE'</b> as many times as you wish on your turn.</p>
+        <br>
+        <br>
+        <p><i class="bullet-point">-> </i> If you <b>roll a '1'</b>, you will <b><em>lose all of your current score and end your turn.</em></b></p>
+        <br>
+        <br>
+        <p><i class="bullet-point">-> </i> To build up your score, bank it by simply clicking on the <b>'HOLD'</b> button.</p>
+        <br>
+        <br>
+        <p><i class="bullet-point">-> </i> Your current round score is shown in the <b>'CURRENT'</b> red box.</p>
+        <br>
+        <br>
+        <p><i class="bullet-point">-> </i> Your total score is shown in red font under your <b>'PLAYER'</b> name.</p>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>
+
+<!Made by Susan Johnson @ github.com/cybero>
